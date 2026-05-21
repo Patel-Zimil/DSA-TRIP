@@ -7,7 +7,7 @@ int main()
     int counter = 0;
     int i = 0;
     cout << "FOR LOOP: ";
-    for (; i <= 10; i++)
+    for (;;)
     {
         cout << i << " ";
     }
