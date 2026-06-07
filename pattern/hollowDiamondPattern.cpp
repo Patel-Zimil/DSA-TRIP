@@ -31,24 +31,24 @@ int main()
         cout << endl;
     }
 
-    /// Lower part
+    // /// Lower part
     for (int i = n - 1; i >= 1; i--)
     {
 
         /// Spaces
         for (int space = 0; space <= ((n - 1) - i); space++)
         {
-            cout << "* ";
+            cout << "  ";
         }
 
         /// Stars
-        // for (int j = 1; j >= 1; j++)
-        // {
-        //     // if (j == 1 || j == ((i * 2) + 1))
-        //     cout << "* ";
-        //     // else
-        //     // cout << "  ";
-        // }
+        for (int j = (i * 2 - 1); j >= 1; j--)
+        {
+            if (j == (i * 2 - 1) || j == 1)
+                cout << "* ";
+            else
+                cout << "  ";
+        }
 
         cout << endl;
     }
